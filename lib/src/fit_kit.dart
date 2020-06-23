@@ -71,6 +71,9 @@ class FitKit {
         return "distance";
       case DataType.ENERGY:
         return "energy";
+      //WY 20200623 add basal energy
+      case DataType.BASAL_ENERGY:
+        return "basal_energy";
       case DataType.WATER:
         return "water";
       case DataType.SLEEP:
@@ -91,6 +94,8 @@ enum DataType {
   WEIGHT,
   DISTANCE,
   ENERGY,
+  //WY 20200623 add basal energy
+  BASAL_ENERGY,
   WATER,
   SLEEP,
   STAND_TIME,

@@ -61,6 +61,12 @@ extension HKSampleType {
                     HKSampleType.quantityType(forIdentifier: .activeEnergyBurned),
                     HKUnit.kilocalorie()
             )
+        //WY 20200622: added basal energy
+        case "basal_energy":
+            return (
+                    HKSampleType.quantityType(forIdentifier: .basalEnergyBurned),
+                    HKUnit.kilocalorie()
+            )            
         case "water":
             if #available(iOS 9, *) {
                 return (
